@@ -1,10 +1,27 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js & TypeScript",
+	"name": "Nuxt.js dev container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
-	"postStartCommand": "echo hello"
+	"postStartCommand": "echo hello",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.remote-containers",
+				"formulahendry.auto-close-tag",
+				"formulahendry.auto-rename-tag",
+				"mikestead.dotenv",
+				"hollowtree.vue-snippets",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"Zignd.html-css-class-completion",
+				"yzhang.markdown-all-in-one",
+				"Vue.volar",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
